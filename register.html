@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="kk">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Тіркелу | Fit Club</title>
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container nav">
+      <a href="index.html" class="logo">Fit<span>Club</span></a>
+      <button class="burger" aria-label="Мәзір">☰</button>
+      <ul class="nav-links">
+        <li><a href="index.html">Басты бет</a></li>
+        <li><a href="index.html#plans">Абонементтер</a></li>
+        <li><a href="index.html#trainers">Жаттықтырушылар</a></li>
+        <li><a href="classes.html">Жаттығулар</a></li>
+        <li><a href="login.html">Кіру</a></li>
+        <li><a href="register.html" class="btn btn-primary btn-sm">Тіркелу</a></li>
+      </ul>
+    </div>
+  </header>
+
+  <div class="auth-wrap">
+    <div class="auth-card">
+      <h1>Тіркелу</h1>
+      <p class="sub">Fit Club мүшесі болыңыз</p>
+      <form data-validate novalidate>
+        <div class="success">Деректер дұрыс. Серверге жіберу 10–11-аптада қосылады.</div>
+        <div class="field">
+          <label for="full_name">Аты-жөні</label>
+          <input type="text" id="full_name" name="full_name" placeholder="Аты-жөніңіз">
+          <div class="error"></div>
+        </div>
+        <div class="field">
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" placeholder="name@mail.com">
+          <div class="error"></div>
+        </div>
+        <div class="field">
+          <label for="phone">Телефон</label>
+          <input type="tel" id="phone" name="phone" placeholder="+7 700 000 00 00">
+          <div class="error"></div>
+        </div>
+        <div class="field">
+          <label for="password">Пароль</label>
+          <input type="password" id="password" name="password" placeholder="Кемінде 6 таңба">
+          <div class="error"></div>
+        </div>
+        <div class="field">
+          <label for="password2">Парольді қайталаңыз</label>
+          <input type="password" id="password2" name="password2" placeholder="••••••">
+          <div class="error"></div>
+        </div>
+        <button type="submit" class="btn btn-primary btn-block">Тіркелу</button>
+      </form>
+      <p class="auth-foot">Аккаунт бар ма? <a href="login.html">Кіру</a></p>
+    </div>
+  </div>
+
+  <footer class="site-footer">
+    <div class="container">
+      <a href="index.html" class="logo">Fit<span style="color:#fb923c">Club</span></a>
+      <p>© 2026 Fit Club. Барлық құқықтар қорғалған.</p>
+    </div>
+  </footer>
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
