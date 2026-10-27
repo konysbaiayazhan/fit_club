@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="kk">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Жаттығулар | Fit Club</title>
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container nav">
+      <a href="index.html" class="logo">Fit<span>Club</span></a>
+      <button class="burger" aria-label="Мәзір">☰</button>
+      <ul class="nav-links">
+        <li><a href="index.html">Басты бет</a></li>
+        <li><a href="index.html#plans">Абонементтер</a></li>
+        <li><a href="index.html#trainers">Жаттықтырушылар</a></li>
+        <li><a href="classes.html" class="active">Жаттығулар</a></li>
+        <li><a href="login.html">Кіру</a></li>
+        <li><a href="register.html" class="btn btn-primary btn-sm">Тіркелу</a></li>
+      </ul>
+    </div>
+  </header>
+
+  <div class="page-head">
+    <div class="container">
+      <h1>Жаттығулар кестесі</h1>
+      <p>Іздеңіз, сүзіңіз және өзіңізге қолайлы жаттығуды таңдаңыз</p>
+    </div>
+  </div>
+
+  <section>
+    <div class="container">
+      <div class="filters">
+        <input type="search" id="search" placeholder="Жаттығу немесе жаттықтырушы іздеу...">
+        <select id="category">
+          <option value="all">Барлық категория</option>
+          <option value="Күш">Күш</option>
+          <option value="Йога">Йога</option>
+          <option value="Кроссфит">Кроссфит</option>
+        </select>
+      </div>
+      <div class="grid grid-3">
+        <article class="card class-card" data-title="Таңғы йога" data-trainer="Айгерім Сәрсенова" data-category="Йога">
+          <span class="tag">Йога</span>
+          <h3>Таңғы йога</h3>
+          <p>Денені босаңсытып, икемділікті арттыратын жұмсақ жаттығу.</p>
+          <div class="class-meta">
+            <span>🧑‍🏫 Айгерім Сәрсенова</span>
+            <span>🕒 Дс, 08:00 · 60 мин</span>
+            <span class="spots">Бос орын: 4 / 15</span>
+          </div>
+          <a href="login.html" class="btn btn-primary btn-sm">Жазылу</a>
+        </article>
+        <article class="card class-card" data-title="Күш жаттығулары: бастауыш" data-trainer="Асхат Нұрланов" data-category="Күш">
+          <span class="tag">Күш</span>
+          <h3>Күш жаттығулары: бастауыш</h3>
+          <p>Негізгі қозғалыстарды дұрыс орындауды үйренесіз.</p>
+          <div class="class-meta">
+            <span>🧑‍🏫 Асхат Нұрланов</span>
+            <span>🕒 Дс, 18:00 · 75 мин</span>
+            <span class="spots">Бос орын: 3 / 12</span>
+          </div>
+          <a href="login.html" class="btn btn-primary btn-sm">Жазылу</a>
+        </article>
+        <article class="card class-card" data-title="Кроссфит WOD" data-trainer="Дәурен Қасымов" data-category="Кроссфит">
+          <span class="tag">Кроссфит</span>
+          <h3>Кроссфит WOD</h3>
+          <p>Жоғары қарқынды функционалды жаттығу.</p>
+          <div class="class-meta">
+            <span>🧑‍🏫 Дәурен Қасымов</span>
+            <span>🕒 Сс, 19:00 · 60 мин</span>
+            <span class="spots">Бос орын: 10 / 14</span>
+          </div>
+          <a href="login.html" class="btn btn-primary btn-sm">Жазылу</a>
+        </article>
+        <article class="card class-card" data-title="Кешкі йога" data-trainer="Айгерім Сәрсенова" data-category="Йога">
+          <span class="tag">Йога</span>
+          <h3>Кешкі йога</h3>
+          <p>Күн соңында стресті азайтатын жаттығу.</p>
+          <div class="class-meta">
+            <span>🧑‍🏫 Айгерім Сәрсенова</span>
+            <span>🕒 Ср, 20:00 · 60 мин</span>
+            <span class="spots">Бос орын: 8 / 15</span>
+          </div>
+          <a href="login.html" class="btn btn-primary btn-sm">Жазылу</a>
+        </article>
+        <article class="card class-card" data-title="Күш жаттығулары: орта деңгей" data-trainer="Асхат Нұрланов" data-category="Күш">
+          <span class="tag">Күш</span>
+          <h3>Күш жаттығулары: орта деңгей</h3>
+          <p>Салмақпен жұмыс және күш көрсеткіштерін арттыру.</p>
+          <div class="class-meta">
+            <span>🧑‍🏫 Асхат Нұрланов</span>
+            <span>🕒 Бс, 18:30 · 90 мин</span>
+            <span class="spots low">Бос орын: 1 / 10</span>
+          </div>
+          <a href="login.html" class="btn btn-primary btn-sm">Жазылу</a>
+        </article>
+        <article class="card class-card" data-title="Кроссфит: жұма кеші" data-trainer="Дәурен Қасымов" data-category="Кроссфит">
+          <span class="tag">Кроссфит</span>
+          <h3>Кроссфит: жұма кеші</h3>
+          <p>Аптаны қарқынды жаттығумен аяқтаңыз.</p>
+          <div class="class-meta">
+            <span>🧑‍🏫 Дәурен Қасымов</span>
+            <span>🕒 Жм, 18:00 · 60 мин</span>
+            <span class="spots">Бос орын: 6 / 14</span>
+          </div>
+          <a href="login.html" class="btn btn-primary btn-sm">Жазылу</a>
+        </article>
+      </div>
+      <p class="empty">Ештеңе табылмады. Басқа сөзбен іздеп көріңіз.</p>
+    </div>
+  </section>
+
+  <footer class="site-footer">
+    <div class="container">
+      <a href="index.html" class="logo">Fit<span style="color:#fb923c">Club</span></a>
+      <p>© 2026 Fit Club. Барлық құқықтар қорғалған.</p>
+    </div>
+  </footer>
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
