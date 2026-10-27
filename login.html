@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="kk">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Кіру | Fit Club</title>
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container nav">
+      <a href="index.html" class="logo">Fit<span>Club</span></a>
+      <button class="burger" aria-label="Мәзір">☰</button>
+      <ul class="nav-links">
+        <li><a href="index.html">Басты бет</a></li>
+        <li><a href="index.html#plans">Абонементтер</a></li>
+        <li><a href="index.html#trainers">Жаттықтырушылар</a></li>
+        <li><a href="classes.html">Жаттығулар</a></li>
+        <li><a href="login.html" class="active">Кіру</a></li>
+        <li><a href="register.html" class="btn btn-primary btn-sm">Тіркелу</a></li>
+      </ul>
+    </div>
+  </header>
+
+  <div class="auth-wrap">
+    <div class="auth-card">
+      <h1>Қош келдіңіз</h1>
+      <p class="sub">Аккаунтыңызға кіріңіз</p>
+      <form data-validate novalidate>
+        <div class="success">Деректер дұрыс. Серверге жіберу 10–11-аптада қосылады.</div>
+        <div class="field">
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" placeholder="name@mail.com">
+          <div class="error"></div>
+        </div>
+        <div class="field">
+          <label for="password">Пароль</label>
+          <input type="password" id="password" name="password" placeholder="••••••">
+          <div class="error"></div>
+        </div>
+        <button type="submit" class="btn btn-primary btn-block">Кіру</button>
+      </form>
+      <p class="auth-foot">Аккаунт жоқ па? <a href="register.html">Тіркелу</a></p>
+    </div>
+  </div>
+
+  <footer class="site-footer">
+    <div class="container">
+      <a href="index.html" class="logo">Fit<span style="color:#fb923c">Club</span></a>
+      <p>© 2026 Fit Club. Барлық құқықтар қорғалған.</p>
+    </div>
+  </footer>
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
