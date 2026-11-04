@@ -191,3 +191,7 @@ section { padding: 72px 0; }
   .hero .btn-outline { margin: 12px 0 0; }
   section { padding: 52px 0; }
 }
+
+/* 10-апта: PHP беттері үшін қосымша */
+.result-count { color: var(--muted); margin-bottom: 18px; }
+.filters .btn { flex: 0 0 auto; }
