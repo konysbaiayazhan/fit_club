@@ -5,44 +5,17 @@ if (burger && navLinks) {
   burger.addEventListener('click', () => navLinks.classList.toggle('open'));
 }
 
-// 2. Жаттығуларды іздеу және сүзу (classes.html)
-const search = document.getElementById('search');
-const category = document.getElementById('category');
-const cards = document.querySelectorAll('.class-card');
-const empty = document.querySelector('.empty');
+// 2. Клиенттік тексеру (жылдам кері байланыс).
+//    Негізгі тексеру серверде (includes/functions.php) жасалады.
+const emailRe = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 
-function filterClasses() {
-  const q = search.value.trim().toLowerCase();
-  const cat = category.value;
-  let visible = 0;
-  cards.forEach(card => {
-    const matchText = card.dataset.title.toLowerCase().includes(q) ||
-                      card.dataset.trainer.toLowerCase().includes(q);
-    const matchCat = cat === 'all' || card.dataset.category === cat;
-    const show = matchText && matchCat;
-    card.style.display = show ? '' : 'none';
-    if (show) visible++;
-  });
-  if (empty) empty.style.display = visible === 0 ? 'block' : 'none';
-}
-if (search && category) {
-  search.addEventListener('input', filterClasses);
-  category.addEventListener('change', filterClasses);
-}
-
-// 3. Формаларды валидациялау (login.html, register.html)
 function setError(field, message) {
   field.classList.add('invalid');
   field.querySelector('.error').textContent = message;
 }
-function clearErrors(form) {
-  form.querySelectorAll('.field').forEach(f => f.classList.remove('invalid'));
-}
-
-const emailRe = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 
 function validateForm(form) {
-  clearErrors(form);
+  form.querySelectorAll('.field').forEach(f => f.classList.remove('invalid'));
   let ok = true;
   const get = name => form.elements[name];
   const box = el => el.closest('.field');
@@ -72,11 +45,7 @@ function validateForm(form) {
 
 document.querySelectorAll('form[data-validate]').forEach(form => {
   form.addEventListener('submit', e => {
-    e.preventDefault();
-    if (validateForm(form)) {
-      const msg = form.querySelector('.success');
-      if (msg) msg.style.display = 'block';
-      form.reset();
-    }
+    // Қате болса жібермейміз; дұрыс болса форма серверге (PHP) кетеді
+    if (!validateForm(form)) e.preventDefault();
   });
 });
