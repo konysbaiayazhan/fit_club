@@ -10,8 +10,8 @@ require 'includes/header.php';
     <div class="hero-inner">
       <h1>Күшті болу бүгіннен басталады</h1>
       <p>Абонемент таңдап, жаттығуларға онлайн жазылыңыз. Тәжірибелі жаттықтырушылар мен ыңғайлы кесте бір жерде.</p>
-      <a href="register.html" class="btn btn-primary">Қазір бастау</a>
-      <a href="classes.html" class="btn btn-outline">Кестені көру</a>
+      <a href="register.php" class="btn btn-primary">Қазір бастау</a>
+      <a href="classes.php" class="btn btn-outline">Кестені көру</a>
       <div class="stats">
         <div><strong><?= count($trainers) ?></strong><span>жаттықтырушы</span></div>
           <div><strong><?= count($classes) ?></strong><span>апталық жаттығу</span></div>
