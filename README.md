@@ -137,6 +137,6 @@ fit-club/
 
 ## Автор
 
-* Конысбай Аяжан Сайфуллақызы *
-* +7 707 719 8531 *
-* konysbayaiazhan@gmail.com *
+* Конысбай Аяжан Сайфуллақызы 
+* +7 707 719 8531 
+* konysbayaiazhan@gmail.com 
