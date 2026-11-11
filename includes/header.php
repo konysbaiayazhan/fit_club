@@ -26,9 +26,10 @@ $menu = [
       <a href="index.php" class="logo">Fit<span>Club</span></a>
       <button class="burger" aria-label="Мәзір">☰</button>
       <ul class="nav-links">
-        <?php foreach ($menu as $key => [$url, $label]): ?>
-        <li><a href="<?= e($url) ?>"<?= $active === $key ? ' class="active"' : '' ?>><?= e($label) ?></a></li>
-        <?php endforeach; ?>
+        <li><a href="index.php"<?= $active === 'home' ? ' class="active"' : '' ?>>Басты бет</a></li>
+        <li><a href="index.php#plans">Абонементтер</a></li>
+        <li><a href="index.php#trainers">Жаттықтырушылар</a></li>
+        <li><a href="classes.php"<?= $active === 'classes' ? ' class="active"' : '' ?>>Жаттығулар</a></li>
         <?php if (is_logged_in()): ?>
           <li><a href="profile.php"<?= $active === 'profile' ? ' class="active"' : '' ?>><?= e($_SESSION['user_name']) ?></a></li>
           <li><a href="logout.php" class="btn btn-outline btn-sm">Шығу</a></li>
