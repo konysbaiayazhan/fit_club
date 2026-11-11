@@ -1,6 +1,7 @@
 <?php
 // Әр беттің басында: $pageTitle және $active айнымалылары беріледі
 require_once __DIR__ . '/functions.php';
+require_once __DIR__ . '/auth.php';
 $pageTitle = $pageTitle ?? 'Fit Club';
 $active    = $active ?? '';
 
@@ -9,7 +10,6 @@ $menu = [
     'plans'    => ['index.php#plans',    'Абонементтер'],
     'trainers' => ['index.php#trainers', 'Жаттықтырушылар'],
     'classes'  => ['classes.php',        'Жаттығулар'],
-    'login'    => ['login.php',          'Кіру'],
 ];
 ?>
 <!DOCTYPE html>
@@ -29,7 +29,13 @@ $menu = [
         <?php foreach ($menu as $key => [$url, $label]): ?>
         <li><a href="<?= e($url) ?>"<?= $active === $key ? ' class="active"' : '' ?>><?= e($label) ?></a></li>
         <?php endforeach; ?>
-        <li><a href="register.php" class="btn btn-primary btn-sm">Тіркелу</a></li>
+        <?php if (is_logged_in()): ?>
+          <li><a href="profile.php"<?= $active === 'profile' ? ' class="active"' : '' ?>><?= e($_SESSION['user_name']) ?></a></li>
+          <li><a href="logout.php" class="btn btn-outline btn-sm">Шығу</a></li>
+        <?php else: ?>
+          <li><a href="login.php"<?= $active === 'login' ? ' class="active"' : '' ?>>Кіру</a></li>
+          <li><a href="register.php" class="btn btn-primary btn-sm">Тіркелу</a></li>
+        <?php endif; ?>
       </ul>
     </div>
   </header>
