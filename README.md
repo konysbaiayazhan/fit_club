@@ -111,12 +111,6 @@ fit-club/
 
 Кейінгі апталарда қосылады: `includes/db.php`, `admin/` және дерекқормен жұмыс.
 
-## Жергілікті іске қосу
-
-1. XAMPP-та Apache мен MySQL-ді қосыңыз.
-2. Жоба қалтасын `htdocs/fit-club` ішіне салыңыз.
-3. `database/schema.sql` файлын DBeaver немесе phpMyAdmin арқылы орындаңыз.
-4. Браузерде `http://localhost/fit-club/` ашыңыз.
 
 ## Даму жоспары
 
