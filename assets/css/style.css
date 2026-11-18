@@ -195,3 +195,26 @@ section { padding: 72px 0; }
 /* 10-апта: PHP беттері үшін қосымша */
 .result-count { color: var(--muted); margin-bottom: 18px; }
 .filters .btn { flex: 0 0 auto; }
+
+
+.field select, .field textarea {
+  width: 100%; padding: 12px 14px; border-radius: 10px; border: 1px solid var(--border);
+  background: var(--bg); color: var(--text); font-size: 1rem; font-family: inherit;
+}
+.field textarea { resize: vertical; }
+.btn-danger { background: #dc2626; color: #fff; }
+.btn-danger:hover { background: #b91c1c; }
+.table-wrap { overflow-x: auto; background: var(--card); border: 1px solid var(--border); border-radius: var(--radius); }
+.table { width: 100%; border-collapse: collapse; font-size: .93rem; }
+.table th, .table td { padding: 12px 14px; text-align: left; border-bottom: 1px solid var(--border); }
+.table th { color: var(--muted); font-weight: 600; font-size: .82rem; text-transform: uppercase; }
+.table tr:last-child td { border-bottom: none; }
+.actions { display: flex; gap: 8px; align-items: center; white-space: nowrap; }
+.actions form { display: inline; }
+.pagination { display: flex; justify-content: center; flex-wrap: wrap; gap: 8px; margin-top: 36px; }
+.pagination a {
+  padding: 8px 14px; border: 1px solid var(--border); border-radius: 10px;
+  background: var(--card); color: var(--text); font-size: .92rem;
+}
+.pagination a:hover { border-color: var(--accent); color: var(--accent); }
+.pagination a.current { background: var(--accent); border-color: var(--accent); color: #fff; }
