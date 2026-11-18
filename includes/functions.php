@@ -1,5 +1,5 @@
 <?php
-// Көмекші функциялар
+const CATEGORIES = ['Күш', 'Йога', 'Кроссфит'];
 
 /** HTML-ға қауіпсіз шығару (XSS-тен қорғау) */
 function e(?string $value): string
@@ -67,4 +67,3 @@ function validate_login(array $data): array
     }
     return $errors;
 }
-const CATEGORIES = ['Күш', 'Йога', 'Кроссфит'];
