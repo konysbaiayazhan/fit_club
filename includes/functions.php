@@ -67,3 +67,4 @@ function validate_login(array $data): array
     }
     return $errors;
 }
+const CATEGORIES = ['Күш', 'Йога', 'Кроссфит'];
