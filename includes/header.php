@@ -31,6 +31,9 @@ $menu = [
         <li><a href="index.php#trainers">Жаттықтырушылар</a></li>
         <li><a href="classes.php"<?= $active === 'classes' ? ' class="active"' : '' ?>>Жаттығулар</a></li>
         <?php if (is_logged_in()): ?>
+        <?php if (($_SESSION['role'] ?? '') === 'admin'): ?>
+          <li><a href="admin_classes.php"<?= $active === 'admin' ? ' class="active"' : '' ?>>Басқару</a></li>
+        <?php endif; ?>
           <li><a href="profile.php"<?= $active === 'profile' ? ' class="active"' : '' ?>><?= e($_SESSION['user_name']) ?></a></li>
           <li><a href="logout.php" class="btn btn-outline btn-sm">Шығу</a></li>
         <?php else: ?>
